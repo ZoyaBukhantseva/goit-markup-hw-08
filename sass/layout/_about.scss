@@ -1,0 +1,38 @@
+
+
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about__list {
+    display: flex;
+    gap: 30px;
+}
+
+.about__item {
+    width: calc((100% - 60px) / 3);
+}
+
+.about__text {
+    position: relative;
+}
+
+.about__absolute {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    font-weight: var(--font-weight-acent);
+    font-size: var(--font-size-base);
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+}
