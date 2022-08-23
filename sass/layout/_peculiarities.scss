@@ -1,11 +1,16 @@
 .peculiarities {
+    padding-top: 60px;
+    padding-bottom: 60px;
+@media screen and (min-width:1200px){
     padding-top: 94px;
-
+    padding-bottom: 0;
+}
 }
 
 .peculiarities__list {
-  
-    gap: 30px;
+ display: flex;
+flex-wrap: wrap;
+gap: 30px;
     h3 {
             margin-bottom: 10px;
             font-weight: var(--font-weight-acent);
@@ -23,7 +28,16 @@
 
 
 }
+.peculiarities__item {
+width: 100%;
+@media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
 
+@media screen and (min-width:1200px) {
+        width: calc((100% - 90px) /4);
+    }
+}
 
 .peculiarities__item::before {
     content: '';
