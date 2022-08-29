@@ -103,8 +103,7 @@ img {
 
 .header__logo {
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0px;
 }
 
 .header {
@@ -119,6 +118,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .navigation {
@@ -128,9 +128,7 @@ img {
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 .navigation__list .navigation__item:not(:last-child) {
@@ -155,9 +153,7 @@ img {
 }
 
 .header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -165,6 +161,99 @@ img {
 }
 .header__contacts .contacts__item + .contacts__item {
   margin-left: 50px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.mob-menu .menu-close {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu-icon {
+  fill: #212121;
+}
+.menu-icon:hover {
+  fill: #2196F3;
+  cursor: pointer;
+}
+
+.mob-menu-list .mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-menu-contact {
+  margin-top: 302px;
+}
+
+.mob-connect-tel {
+  display: block;
+  margin-bottom: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-connect-email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-open {
+  position: absolute;
+  top: 10;
+  right: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-soc {
+  margin-top: 64px;
+}
+.menu-soc .mob-soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1, 22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .active {
