@@ -70,7 +70,7 @@ body {
   border: none;
   background-color: transparent;
   top: 10px;
-  right: 0;
+  right: 0px;
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@ body {
 .menu-open {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 0px;
   border: none;
   background-color: transparent;
 }
@@ -142,16 +142,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1, 22;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
 }
 
-.mob-soc-item {
+.mob-soc-link {
   color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 :root {
@@ -335,6 +340,10 @@ img {
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
+}
+
+.active-mob {
+  color: #2196F3;
 }
 
 .contacts__link {
