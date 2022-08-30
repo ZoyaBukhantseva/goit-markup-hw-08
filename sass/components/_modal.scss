@@ -18,13 +18,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    width: 528px;
-    height: 581px;
+    min-width: 300px;
+    min-height: 500px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
+    @media screen and (min-width:480px){
+        width: 450px;
+        height: 609px;
+    }
+     @media screen and (min-width:768px) {
+            width: 450px;
+            height: 609px;
+        }
+    @media screen and (min-width:1200px){
+        width: 528px;
+        height: 581px;
+        
+    }
 }
 
 .modal-clouse {
@@ -163,7 +176,7 @@ textarea::placeholder {
 }
 .chek-text {
     position: relative;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     font-weight: 400;
@@ -172,17 +185,27 @@ textarea::placeholder {
     letter-spacing: 0.03em;
 
     color: #757575;
+    @media screen and(min-width:768px) {
+        display: flex;
+
+        
+    }
 }
 
 .chek-icon-cheked {
     position: absolute;
-    top: 4px;
-    left: 18px;
+    top: 0px;
+    left: 11px;
     background-color: var(--acent-color);
     border: transparent;
     border-radius: 2px;
     opacity: 0;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 10px;
+        @media screen and(min-width:1200px){
+            top: 4px;
+            left: 18px;
+        }
     .checkbox:checked+.chek-text &{
             opacity: 1;
         }
@@ -195,7 +218,11 @@ textarea::placeholder {
 .chek-icon {
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 10px;
+    
+    margin-left: 10px;
+    @media screen  and(min-width:1200px){
+        margin-right: 10px;
+    }
     .checkbox:checked+.chek-text & {
             opacity: 0;
         }

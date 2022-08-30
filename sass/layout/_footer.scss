@@ -3,9 +3,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-// .footer__contacts {
-//     margin-right: 70px;
-// }
+.footer__contacts {
+ min-width: 231px;
+ @media screen and(min-width:1200px){
+    text-align: left;
+    
+ }
+
+}
 .footer__logo {
     display: block;
     margin-bottom: 20px;
@@ -89,6 +94,10 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"] {
     text-transform: uppercase;
 
     color: #FFFFFF;
+    @media screen  and (min-width:1200px){
+        text-align: left;
+        
+    }
 }
 .footer__input{
  margin-right: 12px;
@@ -181,19 +190,21 @@ a[href=" https://goo.gl/maps/LfRihioMRKPNniMt5"] {
             color: #FFFFFF;
             margin-bottom: 20px;
         }
-   @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
        margin-top: 0px;
    }
- @media screen and (min-width:1200px) {
-        margin-right: 93px;    
+@media screen and (min-width:1200px) {
+       margin-right: 93px;
+       text-align: left; 
         }
 }
+
 
 .field{
     margin-top: 60px;
     @media screen and (min-width:1200px) {
         margin-top: 0;
-        margin-left: 93px;
+    
     }
 }
 .tablet{
