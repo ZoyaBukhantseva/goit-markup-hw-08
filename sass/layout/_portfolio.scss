@@ -1,9 +1,15 @@
 .box-contacts {
-    display: flex;
+  text-align: center;
+    @media screen and (min-width:1200px){
+        display: flex;
+    }
 }
 
 .contacts {
-    margin-right: 70px;
+    margin-right: 0px;
+    // @media screen and(min-width:1200px) {
+    // margin-right: 70px;
+    // }
 }
 
 .portfolio {
