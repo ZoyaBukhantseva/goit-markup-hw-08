@@ -3,10 +3,13 @@
     font-family: var(--font-logo);
     font-style: normal;
     font-weight: var(--font-weight-acent);
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
+@media screen  and(min-width:1200px) {
+    font-style: 26px;
+    
+}
    
 }
 .header__logo{

@@ -67,6 +67,7 @@ body {
 }
 .mob-menu .menu-close {
   position: absolute;
+  display: block;
   border: none;
   background-color: transparent;
   top: 10px;
@@ -79,7 +80,6 @@ body {
 }
 .menu-icon:hover {
   fill: #2196F3;
-  cursor: pointer;
 }
 
 .mob-menu-list .mob-menu-item:not(:last-child) {
@@ -91,7 +91,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -107,7 +107,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196F3;
 }
@@ -117,7 +117,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -203,9 +203,14 @@ img {
   font-family: var(--font-logo);
   font-style: normal;
   font-weight: var(--font-weight-acent);
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-style: 26px;
+  }
 }
 
 .header__logo {
@@ -386,7 +391,6 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mob.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
   background-repeat: no-repeat;
-  width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -395,10 +399,22 @@ img {
 .hero > .container {
   text-align: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tab-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,6 +425,12 @@ img {
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-2x.jpg);
   }
 }
 
@@ -534,10 +556,6 @@ img {
   color: var(--second-text-color);
 }
 
-.about {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 @media screen and (min-width: 1200px) {
   .about {
     padding-top: 94px;
@@ -1544,7 +1562,7 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .chek-text {
     display: -webkit-box;
     display: -ms-flexbox;
